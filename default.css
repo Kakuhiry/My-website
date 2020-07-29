@@ -39,8 +39,6 @@ ul{
 p, li, span, label, input, text, textarea{
     color: var(--maintext);
     font-family: 'Roboto Mono', monospace;
-
-    font-family: 'Russo One', sans-serif;
 }
 
 .s1{
@@ -92,9 +90,21 @@ p, li, span, label, input, text, textarea{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
     
 }
 
+#dnavigation{
+    padding-right: 10px;
+    margin: 0;
+}
+
+#dnavigation li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 .browser-dot{
     background-color: black;
     height: 15px;
