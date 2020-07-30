@@ -136,6 +136,9 @@ p, li, span, label, input, text, textarea{
 }
 
 .left-column{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
     grid-area: left-column ;
 }
 
@@ -150,6 +153,11 @@ p, li, span, label, input, text, textarea{
     border: 2px solid var(--borderColor);
 }
 
+#theme-options-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .theme-dot{
     height: 30px;
     width: 30px;
@@ -157,10 +165,39 @@ p, li, span, label, input, text, textarea{
     border-radius: 50%;
 
     margin: 5px;
+    border: 2px solid var(--themeDotBorder);
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.theme-dot:hover{
+    border-width: 5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode{
+    background-color: #192734;
+}
+
+
+#green-mode{
+    background-color: #78866b;
+}
+
+
+#purple-mode{
+    background-color: #7E4C74;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column{
