@@ -269,7 +269,7 @@ p, li, span, label, input, text, textarea{
 }
 
 .about-section{
-    height: 600px;
+    height: 630px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -281,16 +281,16 @@ p, li, span, label, input, text, textarea{
 }
 
 .more-about-me{
-    height: 225px ;
+    height: 250px ;
     grid-area: TopLeft;
     border-bottom: 2px solid var(--borderColor);
 }
 
 .top-expertise{
-    height: 195px;
+    height: 185px;
     /*border: 2px solid rgb(139, 133, 133);*/
     grid-area: BottomLeft;
-    padding-bottom: 170px;
+    padding-bottom: 190px;
 }
 
 
@@ -300,9 +300,6 @@ p, li, span, label, input, text, textarea{
     grid-area: rightSection;
 }
 
-.aboutMe-wrapper{
-    padding-top: 50px;
-}
 
 .experiences-wrapper{
     background-color: var(--previewShadow);
