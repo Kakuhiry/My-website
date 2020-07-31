@@ -43,7 +43,7 @@ ul{
 
 p, li, span, label, input, text, textarea{
     color: var(--maintext);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace; 
 }
 
 .s1{
@@ -133,6 +133,10 @@ p, li, span, label, input, text, textarea{
     background-color: #2ACA3E;
 }
 
+
+
+
+
 .dots-wrapper{
     display: flex;
     padding: 15px;
@@ -168,7 +172,7 @@ p, li, span, label, input, text, textarea{
     border-radius: 50%;
 
     margin: 5px;
-    border: 2px solid var(--themeDotBorder);
+    border: 0px solid var(--themeDotBorder);
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -176,7 +180,9 @@ p, li, span, label, input, text, textarea{
 }
 
 .theme-dot:hover{
-    border-width: 5px;
+    
+    border-color: var(--mainColor);
+    border-width: 2px;
 }
 
 #light-mode{
@@ -196,6 +202,7 @@ p, li, span, label, input, text, textarea{
 #purple-mode{
     background-color: #7E4C74;
 }
+
 
 #settings-note{
     font-size: 12px;
@@ -259,6 +266,47 @@ p, li, span, label, input, text, textarea{
     
     bottom: -5px;
     right: -5px;
+}
+
+.about-section{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'TopLeft rightSection'
+    'BottomLeft rightSection' 
+    ;
+    padding-left: 3px;
+
+}
+
+.more-about-me{
+    height: 225px ;
+    grid-area: TopLeft;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.top-expertise{
+    height: 195px;
+    /*border: 2px solid rgb(139, 133, 133);*/
+    grid-area: BottomLeft;
+    padding-bottom: 170px;
+}
+
+
+.social-section{
+    height: 455px;
+
+    grid-area: rightSection;
+}
+
+.aboutMe-wrapper{
+    padding-top: 50px;
+}
+
+.experiences-wrapper{
+    background-color: var(--previewShadow);
+    height: 170px;
 }
 
 @media screen and (max-width: 1200px){
