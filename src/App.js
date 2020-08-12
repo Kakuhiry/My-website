@@ -8,7 +8,7 @@ function App() {
 
           <div class="main-container">
               <div class="greeting-wrapper">
-                  <h1>Hi, i'm Elvis Batsista </h1>
+                  <h1>Hi, i'm Elvis Batista </h1>
               </div>
 
               <div class="intro-wrapper">
